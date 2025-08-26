@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteering Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80") no-repeat center center/cover;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #f39c12;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e67e22;
+    }
+
+    nav {
+      background: #2c3e50;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea, button {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #f39c12;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e67e22;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Make a Difference</h1>
+    <p>Join us in creating positive change through volunteering</p>
+    <a href="#organised" class="btn">Get Involved</a>
+  </header>
+
+  <nav>
+    <a href="#intro">Home</a>
+    <a href="#organised">Organised Volunteering</a>
+    <a href="#local">Local Volunteering</a>
+    <a href="#international">International Ideas</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="intro">
+    <h2>Introduction</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Volunteers working together">
+      <div class="card-content">
+        <p>
+          Volunteering is about giving your time and energy to help others without expecting financial reward. 
+          It builds stronger communities, develops skills, and creates positive change. 
+          Whether locally or internationally, volunteering allows people to make a real impact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="organised">
+    <h2>Organised Volunteering</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1524492449090-1a065f22d27a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Group volunteering">
+        <div class="card-content">
+          <p>Work with NGOs and schools to bring education and support to underprivileged children.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Environmental campaign">
+        <div class="card-content">
+          <p>Join environmental campaigns such as beach cleanups, tree planting, or recycling drives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="local">
+    <h2>Local Volunteering</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603575448360-9c40ff0b49fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Tutoring kids">
+        <div class="card-content">
+          <p>Tutor children in your community and help them succeed in school.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593113630400-e0c7bb02964c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Helping elderly">
+        <div class="card-content">
+          <p>Support the elderly by visiting them, assisting with shopping, or providing companionship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="international">
+    <h2>International Ideas</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Teaching abroad">
+        <div class="card-content">
+          <p>Volunteer abroad by teaching English in rural schools and supporting education programs.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Conservation">
+        <div class="card-content">
+          <p>Join conservation projects like protecting wildlife or preserving rainforests overseas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Volunteering Project | Made with ❤️ by Students</p>
+  </footer>
+</body>
+</html>
